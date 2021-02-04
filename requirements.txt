@@ -9,7 +9,7 @@ Jinja2
 joblib
 nltk
 pathy
-smart-open
+smart-open==2.2.0
 numpy
 pandas
 regex
