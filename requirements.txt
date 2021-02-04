@@ -13,7 +13,6 @@ joblib==1.0.0
 nltk==3.5
 numpy
 pandas
-pywin32==228
 regex
 requests
 scikit-learn
