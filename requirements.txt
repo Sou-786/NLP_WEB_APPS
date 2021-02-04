@@ -8,6 +8,8 @@ gensim
 Jinja2 
 joblib
 nltk
+pathy
+smart-open
 numpy
 pandas
 regex
