@@ -55,7 +55,7 @@ pyparsing
 pyrsistent
 python-dateutil 
 pytz==2021.1
-pywin32==228
+pywin32
 pywinpty 
 pyzmq==20.0.0
 regex==2020.11.13
