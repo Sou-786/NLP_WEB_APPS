@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+
+<div class="container">
+	<section class="jumbotron text-center">
+	<div class="row">
+		<div class="col-sm-6">
+		<h1 class="jumbotron-heading">Spam Classification</h1>
+          <p class="lead text-black">
+            <h3><b>SK</b></h3>
+            <p>
+           </p></p>
+          <p>
+            <a href="https://www.linkedin.com/in/soumit-kar-6b69a8121/" class="btn btn-primary my-2">Linked In</a>
+            <a href="https://github.com/Sou-786/" class="btn btn-secondary my-2">GitHub</a>
+          </p>
+
+		</div>
+
+		<div class="col-sm-6">
+			<div class="container">
+				<form method="POST" action="/spam">
+				<textarea name="message" class="form-control" cols="8" rows="8"></textarea>
+				<br>
+				<button class="btn btn-success" type="submit">Analysis</button>
+
+				<button style="margin-left: 10px;" class="btn btn-danger" type="reset">Reset</button>
+
+			</form>
+			<br>
+
+			<div class="container">
+				{% if prediction == 1 %}
+					<div class="container">
+						<p class="alert alert-success"><b>Message is not Spam</b></p>
+					</div>
+				{% elif prediction == 0 %}
+					<div class="container">
+						<p class="alert alert-danger"><b>Message is Spam</b></p>
+					</div>
+				{% endif %}
+			</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+	<!-- form area -->
+
+
+{% endblock %}

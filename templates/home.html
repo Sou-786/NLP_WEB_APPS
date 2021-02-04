@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+     <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Natural Languages Processing Web Apps</h1>
+          <p class="lead text-black">
+            <h3><b>Soumit Kar</b></h3>
+            <p>
+          AI and Maching Learning enthusiast</p></p>
+          <p>
+            <a href="https://www.linkedin.com/in/soumit-kar-6b69a8121/" class="btn btn-primary my-2">Linked in</a>
+            <a href="https://github.com/Sou-786/" class="btn btn-secondary my-2">GitHub</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/1.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">Sentiment Analysis is the most common text classification tool that analyses an incoming message and tells whether the underlying sentiment is positive, negative.It helps businesses to understand customer feedback.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/nlpsentiment">
+                        <button type="button" class="btn btn-sm btn btn-success">Sentiment Analysis</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">Sk</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/2.jpg" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">"We all face the problem of spams in our inboxes. Let’s build a spam classifier program in python using NLP which can tell whether a given message is spam or not. Spam is bad because it shifts the cost of advertising to the recipients."</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/nlpspam">
+                        <button type="button" class="btn btn-sm btn btn-danger">Spam Classification</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">SK</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/3.jpg" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">"Text summarization refers to the technique of shortening long pieces of text. The intention is to create a coherent and fluent summary. Also here you can Summarize a web page by putting URL.</p>
+                 <br>
+                  <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                      <a href="/nlpsummarize">
+                        <button type="button" class="btn btn-sm btn btn-warning">Summarizer</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">SK</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+       
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top" src="static/images/5.png" alt="Card image cap" style="height: 250px;">
+          <div class="card-body">
+            <p class="card-text">Financial Complaint Classifier. This classifier categorizes  Financial Complaints. This classifier classifies 11 types of financial complaints.</p>
+           <br>
+            <div class="d-flex justify-content-between align-items-center">
+             <div class="btn-group">
+                <a href="/nlpcomplain">
+                  <button type="button" class="btn btn-sm btn btn-info">Finanacial Complain Classifier</button>
+                </a>
+              </div>
+              <small class="text-muted">SK</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+{%  endblock %}

@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+
+<div class="album py-5 bg-dark"></div>
+<div class="container">
+	<section class="jumbotron text-center">
+	<div class="row">
+		<div class="col-sm-6">
+		<h1 class="jumbotron-heading">Financial Complaint Classifier </h1>
+          <p class="lead text-black">
+           
+            <p>
+         <b>Financial Complaint Classifier Can Classify 11 Types of Categories</b></p>
+         <ul>
+         	<li>
+                Credit reporting, repair, or other Service
+         	</li>
+         	<li>
+                Debt collection
+         	</li>
+         	<li>
+                Consumer Loan
+         	</li>
+         	<li>
+                Credit card or prepaid card
+             </li>
+             <li>
+                Mortgage
+            </li>
+            <li>
+                Vehicle loan or lease
+            </li>
+            <li>
+                Student loan
+            </li>
+            <li>
+                Payday loan, title loan, or personal loan
+            </li>
+            <li>
+                Checking or savings account
+            </li>
+            <li>
+                Bank account or service
+            </li>
+            <li>
+                Money transfer, virtual currency
+            </li>
+            <li>
+                Other financial service
+            </li>
+         </ul>
+     </p>
+          <p>
+            <a href="https://www.linkedin.com/in/soumit-kar-6b69a8121/" class="btn btn-primary my-2">Linked In</a>
+            <a href="https://github.com/Sou-786/" class="btn btn-secondary my-2">Github</a>
+          </p>
+         
+		</div>
+
+		<div class="col-sm-6">
+			<div class="container">
+				<form method="POST" action="/complain">
+				<textarea name="message" class="form-control" cols="8" rows="8"></textarea>
+				<br>
+				<button class="btn btn-success" type="submit">Classify</button>
+
+				<button style="margin-left: 10px;" class="btn btn-danger" type="reset">Reset</button>
+
+			</form>
+			<br>
+
+			<div class="container">
+				{% if prediction == 'Credit reporting, repair, or other' %}
+					<div class="container">
+						<p class="alert alert-success"><b>t</b>Credit reporting, repair, or other</p>
+					</div>
+				{% elif prediction == 'Debt collection' %}
+					<div class="container">
+						<p class="alert alert-danger"><b>Debt collection</b></p>
+					</div>
+				{% elif prediction == 'Consumer Loan' %}
+					<div class="container">
+						<p class="alert alert-warning"><b>Consumer Loan</b></p>
+					</div>
+				{% elif prediction == 'Credit card or prepaid card' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Credit card or prepaid card</b></p>
+                </div>
+                {% elif prediction == 'Mortgage' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Mortgage</b></p>
+                </div>
+                {% elif prediction == 'Vehicle loan or lease' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Vehicle loan or lease</b></p>
+                </div>
+                {% elif prediction == 'Student loan' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Student loan</b></p>
+                </div>
+                {% elif prediction == 'Payday loan, title loan, or personal loan' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Payday loan, title loan, or personal loan</b></p>
+                </div>
+                {% elif prediction == 'Checking or savings account' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Checking or savings account</b></p>
+                </div>
+                {% elif prediction == 'Bank account or service' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Bank account or service</b></p>
+                </div>
+                {% elif prediction == 'Money transfer, virtual currency, or money' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Money transfer, virtual currency, or money </b></p>
+                </div>
+                {% elif prediction == 'Other financial service' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Other financial service</b></p>
+                </div>
+                {% elif prediction == 'Money transfer' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Money transfer</b></p>
+				</div>
+				{% endif %}
+			</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>	
+	<!-- form area -->
+	
+
+{% endblock %}
