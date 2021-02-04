@@ -2,12 +2,9 @@ argon2-cffi
 beautifulsoup4==4.9.3
 bs4==0.0.1
 certifi==2020.12.5
-defusedxml==0.6.0
 dill==0.3.3
-entrypoints==0.3
 Flask==1.1.2
 gensim==3.8.3
-idna==2.10
 Jinja2 
 joblib==1.0.0
 nltk==3.5
@@ -20,4 +17,4 @@ spacy==3.0.1
 spacy-legacy==3.0.1
 tqdm==4.56.0
 urllib3
-wasabi==0.8.2
+
