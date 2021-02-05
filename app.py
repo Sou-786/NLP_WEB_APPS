@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request,url_for
 #from sklearn.linear_model import LogisticRegression
 import pandas as pd
-from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -20,11 +18,10 @@ from urllib.request import urlopen
 import joblib
 import pickle
 import string
-import nltk
+
 #________________________________________________________________________________________________________________________
 # summarize
 
-# load the spacy english model
 
 # model load sentiment analysis:
 sen_model = joblib.load('models/sentiment.pkl')
@@ -158,4 +155,4 @@ def analyze_url():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run()
