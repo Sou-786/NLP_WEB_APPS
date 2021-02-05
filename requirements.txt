@@ -20,7 +20,6 @@ Jinja2==2.11.3
 joblib==1.0.0
 MarkupSafe==1.1.1
 murmurhash==1.0.5
-nltk==3.5
 numpy
 packaging==20.9
 pandas
